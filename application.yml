@@ -8,10 +8,14 @@ eureka:
     hostname: localhost
 
 jwt:
+  token:
+    secret: sup9rUltr4S3cr3tK3y
+    issuer: AuthService
+    audience: shmitter-services
   secret:
     audiences: UserService, PostService, FeedService, UserAchievementsService, CommentModeratorService
     token:
-        issuer: AuthService
+      issuer: AuthService
     commentModeratorService:
       audience: CommentModeratorService
       key: eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBdXRoU2VydmljZSIsImF1ZCI6IkNvbW1lbnRNb2RlcmF0b3JTZXJ2aWNlIiwic3ViIjoiY29tbWVudC1tb2RlcmF0b3Itc2VydmljZSIsImV4cCI6MTY1NjYwMzEzOSwiY2FuLXJlYWQiOnRydWUsImNhbi13cml0ZSI6dHJ1ZSwiY2FuLWVkaXQiOnRydWV9.3N2EbIeXuZywFtQ06CuAVksZ2kaPZSrgXzTcQeACsJqOPNfDkzVsxRM4WoPEQPIWqGfv9mvxVQ7-BJiIb5etmQ
