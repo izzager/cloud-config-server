@@ -3,7 +3,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://serviceregistry:9999/eureka
+      defaultZone: http://serviceregistry:8761/eureka
 
 jwt:
   token:
